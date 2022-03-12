@@ -1,0 +1,173 @@
+/* variables */
+:root {
+	--Verydarkblue: hsl(233, 47%, 7%);
+	--Darkdesaturatedblue: hsl(244, 38%, 16%);
+	--Softviolet: hsl(277, 64%, 61%);
+	--hite: hsl(0, 0%, 100%);
+	--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
+	--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.6);
+}
+
+/* frontend mentor styles start*/
+.attribution {
+	color: var(--hite);
+	margin: 30px 0 0;
+	font-size: 0.6875rem;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.attribution a {
+	color: var(--Softviolet);
+}
+/* frontend mentor styles end*/
+
+/* mobile-first styles */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	font-size: 0.9375rem;
+	height: auto;
+	width: 100vw;
+	padding: 50px 0;
+	background-color: var(--Verydarkblue);
+}
+
+.container {
+	text-align: center;
+	height: 100%;
+	width: 85%;
+	border-radius: 10px;
+	background-color: var(--Darkdesaturatedblue);
+}
+
+.img-container {
+	width: 100%;
+	background-color: var(--Softviolet);
+	border-radius: 10px 10px 0 0;
+}
+
+.img-container img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 10px 10px 0 0;
+	filter: contrast(150%);
+	opacity: 0.5;
+}
+.img-container .desktop {
+	display: none;	
+}
+
+.content {
+	padding: 25px 20px 20px;
+}
+
+.heading h1 {
+	font-family: 'Inter', sans-serif;
+	color: var(--hite);
+}
+
+.heading h1 span {
+	color: var(--Softviolet);
+}
+
+.heading p {
+	font-family: 'Inter', sans-serif;
+	color: var(--Slightlytransparentwhite);
+	margin: 15px 0 30px;
+	padding: 0 5px;
+}
+
+.stats li {
+	margin: 0 0 25px;
+}
+
+.stat-num {
+	font-size: 1.5rem;
+	margin: 0 0 5px;
+		font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	color: var(--hite);
+}
+
+.stat-info {
+	text-transform: uppercase;
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--Slightlytransparentwhite);
+}
+
+/* media queries */
+@media screen and (min-width: 650px) and (max-width: 850px) {
+	.container {
+		width: 70%;
+		height: auto;
+	}
+}
+/* small laptops */
+@media screen and (min-width: 851px) and (max-width: 1149px) {
+	.container {
+		width: 68%;
+		height: auto;
+	}
+}
+
+/* larger screens (laptops)*/
+@media screen and (min-width: 1150px) {
+	body {
+		height: 100vh;
+		padding: 0;
+	}
+	.container {
+		height: auto;
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: left;
+	}
+	.content {
+		padding: 60px 60px 60px;
+		width: 50%;
+	}
+	.img-container {
+		width: 50%;
+		border-radius: 0 10px 10px 0;
+	}
+	.img-container img {
+		border-radius: 0 10px 10px 0;
+	}
+	.img-container .mobile {
+	display: none;	
+}
+	.img-container .mobile {
+	display: block;	
+}
+
+	.heading h1 {
+		font-size: 2.5rem;
+	}
+	.heading p {
+		margin: 35px 0 80px;
+		line-height: 1.5;
+		padding: 0 100px 0 0;
+	}
+	.stats {
+		display: flex;
+	}
+	.stats li:not(:last-child) {
+		margin: 0 3.75rem 0 0;
+	}
+}
