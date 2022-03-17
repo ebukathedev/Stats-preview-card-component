@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/stats-preview-card-component-using-css-flexbox-i5GMpgWmT)
--   Live Site URL: [Add live site URL here](https://serene-franklin-99f5f0.netlify.app/)
+-   Solution URL:  [here](https://www.frontendmentor.io/solutions/stats-preview-card-component-using-css-flexbox-i5GMpgWmT)
+-   Live Site URL: [here](https://serene-franklin-99f5f0.netlify.app/)
 
 ### Built with
 
