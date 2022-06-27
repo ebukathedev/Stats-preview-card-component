@@ -1,11 +1,11 @@
 /* variables */
 :root {
-	--Verydarkblue: hsl(233, 47%, 7%);
-	--Darkdesaturatedblue: hsl(244, 38%, 16%);
-	--Softviolet: hsl(277, 64%, 61%);
+	--very-dark-blue: hsl(233, 47%, 7%);
+	--dark-desaturated-blue: hsl(244, 38%, 16%);
+	--soft-violet: hsl(277, 64%, 61%);
 	--hite: hsl(0, 0%, 100%);
-	--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.75);
-	--Slightlytransparentwhite: hsla(0, 0%, 100%, 0.6);
+	--slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+	--slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
 }
 
 /* frontend mentor styles start*/
@@ -18,7 +18,7 @@
 }
 
 .attribution a {
-	color: var(--Softviolet);
+	color: var(--soft-violet);
 }
 /* frontend mentor styles end*/
 
@@ -44,7 +44,7 @@ body {
 	height: auto;
 	width: 100vw;
 	padding: 50px 0;
-	background-color: var(--Verydarkblue);
+	background-color: var(--very-dark-blue);
 }
 
 .container {
@@ -52,12 +52,12 @@ body {
 	height: 100%;
 	width: 85%;
 	border-radius: 10px;
-	background-color: var(--Darkdesaturatedblue);
+	background-color: var(--dark-desaturated-blue);
 }
 
 .img-container {
 	width: 100%;
-	background-color: var(--Softviolet);
+	background-color: var(--soft-violet);
 	border-radius: 10px 10px 0 0;
 }
 
@@ -83,12 +83,12 @@ body {
 }
 
 .heading h1 span {
-	color: var(--Softviolet);
+	color: var(--soft-violet);
 }
 
 .heading p {
 	font-family: 'Inter', sans-serif;
-	color: var(--Slightlytransparentwhite);
+	color: var(--slightly-transparent-white);
 	margin: 15px 0 30px;
 	padding: 0 5px;
 }
@@ -108,18 +108,23 @@ body {
 .stat-info {
 	text-transform: uppercase;
 	font-family: 'Lexend Deca', sans-serif;
-	color: var(--Slightlytransparentwhite);
+	color: var(--slightly-transparent-white);
 }
 
 /* media queries */
-@media screen and (min-width: 650px) and (max-width: 850px) {
+@media screen and (max-width: 850px) {
 	.container {
 		width: 70%;
 		height: auto;
 	}
 }
+
+
+/* For the media queries, I think you should stick with just either min-width or max-width */
+
+
 /* small laptops */
-@media screen and (min-width: 851px) and (max-width: 1149px) {
+@media screen only and (max-width: 1149px) {
 	.container {
 		width: 68%;
 		height: auto;
